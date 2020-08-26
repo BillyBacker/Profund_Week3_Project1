@@ -34,7 +34,7 @@ int main() {
 	char b[256];
 	char c;
 	printf("Enter Text (Max 2047 charactors) : ");
-	scanf("%s", &a);
+	scanf("%[^\n]", &a);
 	printf("Enter Search key word (Max 255 charactors) : ");
 	scanf("%s", &b);
 	if (any(b, a)) {
